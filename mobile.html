@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="check.js"></script>
+</head>
+<body>
+  <!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+     <img src="logo2.png" alt="logo" width="150" height="80" opacity="0.6" style="padding:12px">
+    <!-- Drop down menu for navigation -->
+      <div id="myLinks">
+        <a href="mobile.html" class="active">Home</a>
+        <a href="order.html">Order</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    <!-- Closing div for drop menu -->
+    </div>
+    <!-- Main Section -->
+    <div style="padding-left:16px">
+        <h3>About the Instructor</h3>
+        <!-- About event -->
+        <div class="b">Kelly Shepard is a Healer, yoga student, freelance yoga instructor, health & wellness advocate. She has been practicing yoga & mindfulness since 2008. Former athlete & member of Federal Law Enforcement, Kelly has always lived an active lifestyle. She has found ways to integrate yoga into her life since she started practicing her freshman year at Penn State University.
+        <h3>Namaskar Workshop</h3>
+          <p>For a limited time Kelly is offering a 2 day yoga workshop, which calms the mind and strengthens the body for any yoga level of experience. This yoga immersions:
+        <ul>
+          <li>Approaching Yoga via different styles and expressions</li>
+          <li>Specific physical focus like hip openers or hamstrings</li>
+          <li>Deepening understanding of poses like Inversions (handstand) or Surya Namaskar (Sun Salutations)</li>
+          <li>Energetic body education-Chakras & vibrational flow</li>
+          <li>Roots of Yoga-philosophy, chanting, mudras</li>
+        </ul>
+        <h3>Workshop Details</h3>
+          <p>Saturday, July 10, 2020: 1 hour Master Class</p>
+          <p>Sunday, July 11, 2020: 1 hour beginner/intermediate Class</p>
+        <button class="tab" onclick="window.location.href='order.html';">Get Tickets</button>
+        <!-- Closing div for About event -->
+        </div>
+    <!-- Closing div for Main Section -->
+    </div>
+<br><br>
+<footer>
+  <img src="hand.png" alt="logo" width="20" height="20"/>
+  <p>Copyright &copy; Namaste Works 2020</p>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+</footer>
+<!-- End smartphone / tablet look -->
+</div>
+<!-- JS for drop menu -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
