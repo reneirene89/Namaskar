@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Order</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <img src="logo2.png" alt="logo" width="150" height="80" opacity="0.6" style="padding:12px">
+    <!-- Drop down menu for navigation -->
+    <div id="myLinks">
+      <a href="order.html" class="active">Order</a>
+      <a href="mobileCheckout.html">Checkout</a>
+      <a href="mobile.html">Home</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  <!-- End div Drop down menu for navigation -->
+  </div>
+  <!-- Order area -->
+  <div id="wrapper">
+      <h1>Purchase your tickets now!</h1>
+        <p style="text-align: center;"><span id="timer"></span>minutes</p>
+      <ul>
+        <li>$49 - Adult</li>
+        <li>$20 - Child</li>
+        <li>$30 - Senior </li>
+      </ul>
+      <form name='order'>
+        <label>Quantity: </label><input type="text" id="quantityAdult" value="0"> 
+        <label>Adult</label>
+        <br><br>
+        <label>Quantity: </label><input type="text" id="quantityChild" value="0"> 
+        <label>Child</label>
+        <br><br>
+        <label>Quantity: </label><input type="text" id="quantitySenior" value="0"> <label>Senior</label>
+        <br><br>
+      <button type="submit" id="submitButton">Submit</button>
+        <p id="totalPrice"></p>
+      </form>
+    <script src="jsScript.js"></script>
+    <br>
+  <!-- End div for wrapper -->
+  </div>
+  <br><br>
+    <!-- Checkout button that links to checkout page -->
+    <a href="mobileCheckout.html"> </a>
+      <input type="submit" value="Checkout Now" class="btn">
+  <br><br>
+<footer>
+  <img src="hand.png" alt="logo" width="20" height="20"/>
+  <p>Copyright &copy; Namaste Works 2020</p>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+</footer>
+<!-- End smartphone / tablet look -->
+</div>
+<!-- JS for drop menu -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
